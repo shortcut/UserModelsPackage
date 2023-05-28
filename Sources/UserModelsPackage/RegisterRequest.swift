@@ -14,7 +14,7 @@ public struct RegisterRequest: Codable {
     }
 }
 
-extension RegisterRequest {
+public extension RegisterRequest {
     var httpBody: Data? {
         let encoder = JSONEncoder()
         let jsonData = try? encoder.encode(self)
