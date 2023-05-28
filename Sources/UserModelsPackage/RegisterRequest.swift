@@ -6,7 +6,7 @@ public struct RegisterRequest: Codable {
     public let email: String
     public let password: String
     
-    init(firstName: String, lastName: String, email: String, password: String) {
+    public init(firstName: String, lastName: String, email: String, password: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
