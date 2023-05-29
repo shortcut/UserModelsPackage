@@ -16,3 +16,12 @@ public struct LoginInput: Codable {
         self.password = password
     }
 }
+
+public extension LoginInput {
+    var httpBody: Data? {
+        let encoder = JSONEncoder()
+        let jsonData = try? encoder.encode(self)
+        
+        return jsonData
+    }
+}
