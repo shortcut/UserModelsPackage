@@ -12,7 +12,7 @@ let package = Package(
             targets: ["UserModelsPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/OpenKitten/BSON.git", from: "7.0.0"),
+        .package(url: "https://github.com/orlandos-nl/BSON.git", from: "7.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
