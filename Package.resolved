@@ -3,10 +3,10 @@
     {
       "identity" : "bson",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/OpenKitten/BSON.git",
+      "location" : "https://github.com/orlandos-nl/BSON.git",
       "state" : {
-        "revision" : "c29936981d39667429d4e0ec03aa8d6a722ea36a",
-        "version" : "7.0.31"
+        "revision" : "944dfb3b0eb028f477c25ba6a071181de8ab903a",
+        "version" : "8.0.10"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "2d8e6ca36fe3e8ed74b0883f593757a45463c34d",
-        "version" : "2.53.0"
+        "revision" : "6213ba7a06febe8fef60563a4a7d26a4085783cf",
+        "version" : "2.54.0"
       }
     }
   ],
