@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct RefreshTokenResponse: Codable {
-    let status = "success"
-    let accessToken: String
-    let refreshToken: String
+public struct RefreshTokenResponse: Codable {
+    public let status = "success"
+    public let accessToken: String
+    public let refreshToken: String
     
     enum CodingKeys: String, CodingKey {
         case accessToken
