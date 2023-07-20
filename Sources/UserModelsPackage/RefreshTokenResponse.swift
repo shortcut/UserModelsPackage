@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct RefreshTokenResponse: Codable {
+    let status = "success"
+    let accessToken: String
+    let refreshToken: String
+    
+    enum CodingKeys: String, CodingKey {
+        case accessToken
+        case refreshToken
+    }
+}
