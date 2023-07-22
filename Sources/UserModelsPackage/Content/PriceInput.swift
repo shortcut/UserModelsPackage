@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct PriceInput {
+public struct PriceInput: Codable {
     public let area: String
     public let start: Date
     public let end: Date

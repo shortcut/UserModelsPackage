@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct EnergyPrice: Identifiable {
+public struct EnergyPrice: Codable, Identifiable {
     public let id: UUID
     public let hour: Date
     public let øre: Int

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct EnergyDayPrice {
+public struct EnergyDayPrice: Codable {
     public let min: Int
     public let max: Int
     public let average: Int
