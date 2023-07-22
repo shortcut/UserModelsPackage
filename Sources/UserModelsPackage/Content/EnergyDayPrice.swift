@@ -8,12 +8,12 @@
 import Foundation
 
 public struct EnergyDayPrice: Codable {
-    public let min: Int
-    public let max: Int
+    public let min: Date
+    public let max: Date
     public let average: Int
     public let prices: [EnergyPrice]
     
-    public init(min: Int, max: Int, average: Int, prices: [EnergyPrice]) {
+    public init(min: Date, max: Date, average: Int, prices: [EnergyPrice]) {
         self.min = min
         self.max = max
         self.average = average
