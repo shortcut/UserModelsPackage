@@ -8,11 +8,13 @@
 import Foundation
 
 public struct PriceInput {
-    public let date: Date
     public let area: String
-    
-    public init(date: Date, area: String) {
-        self.date = date
+    public let start: Date
+    public let end: Date
+
+    public init(area: String, start: Date, end: Date) {
         self.area = area
+        self.start = start
+        self.end = end
     }
 }
