@@ -20,7 +20,8 @@ public struct PriceInput: Codable {
 }
 public extension PriceInput {
     var httpBody: Data? {
-        let encoder = JSONEncoder()
+        var encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
         let jsonData = try? encoder.encode(self)
         
         return jsonData
