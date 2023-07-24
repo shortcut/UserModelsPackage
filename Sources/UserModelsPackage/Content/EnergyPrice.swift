@@ -9,10 +9,10 @@ import Foundation
 
 public struct EnergyPrice: Codable, Identifiable {
     public let id: UUID
-    public let hour: Date
-    public let øre: Int
+    public let hour: Int
+    public let øre: Double
     
-    public init(id: UUID, hour: Date, øre: Int) {
+    public init(id: UUID, hour: Int, øre: Double) {
         self.id = id
         self.hour = hour
         self.øre = øre
