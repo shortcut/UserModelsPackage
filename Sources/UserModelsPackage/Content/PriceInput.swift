@@ -18,3 +18,11 @@ public struct PriceInput: Codable {
         self.end = end
     }
 }
+public extension PriceInput {
+    var httpBody: Data? {
+        let encoder = JSONEncoder()
+        let jsonData = try? encoder.encode(self)
+        
+        return jsonData
+    }
+}
