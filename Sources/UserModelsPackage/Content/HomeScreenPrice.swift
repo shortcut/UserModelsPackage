@@ -24,7 +24,7 @@ public enum HomePriceType: String, Codable {
     case hairDryer = "HairDryer"
 }
 
-public enum HomeScreenPrice: Codable {
+public enum HomeScreenPrice: Identifiable, Codable {
     case overview(now: String, from: String, to: String, average: String, averageTomorrow: String)
     case highLow(highFrom: String, highTo: String, lowFrom: String, lowTo: String)
     case cost(type: HomePriceType, title: String, cost: String, unit: String)
@@ -58,4 +58,8 @@ public enum HomeScreenPrice: Codable {
         case cost
         case unit
     }
+}
+
+struct Test {
+    let price: HomeScreenPrice = .overview(now: "", from: "", to: "", average: "", averageTomorrow: "")
 }
