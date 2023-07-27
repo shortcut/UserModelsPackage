@@ -10,9 +10,9 @@ import Foundation
 public struct PriceInput: Codable {
     public let area: String
     public let start: Date
-    public let end: Date?
+    public let end: Date
 
-    public init(area: String, start: Date, end: Date?) {
+    public init(area: String, start: Date, end: Date) {
         self.area = area
         self.start = start
         self.end = end
