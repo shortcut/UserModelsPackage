@@ -5,12 +5,14 @@ public struct RegisterRequest: Codable {
     public let lastName: String
     public let email: String
     public let password: String
+    public let priceArea: String
     
-    public init(firstName: String, lastName: String, email: String, password: String) {
+    public init(firstName: String, lastName: String, email: String, password: String, priceArea: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
         self.password = password
+        self.priceArea = priceArea
     }
 }
 
