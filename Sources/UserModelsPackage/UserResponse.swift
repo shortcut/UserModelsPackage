@@ -7,12 +7,14 @@ public struct UserResponse: Codable {
     public let lastName: String?
     public let email: String
     public let addresses: [AddressResponse]?
+    public let priceArea: String?
     
-    public init(id: ObjectId?, firstName: String?, lastName: String?, email: String, addresses: [AddressResponse]?) {
+    public init(id: ObjectId?, firstName: String?, lastName: String?, email: String, addresses: [AddressResponse]?, priceArea: String?) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
         self.addresses = addresses
+        self.priceArea = priceArea
     }
 }
