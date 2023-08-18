@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum HomeGroups: Codable {
+public enum HomeGroups: Codable, Identifiable {
     public var id: UUID { UUID() }
     case price([HomeScreenPrice])
     case consumption([HomeScreenConsumption])
