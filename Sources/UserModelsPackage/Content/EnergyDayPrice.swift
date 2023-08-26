@@ -12,7 +12,7 @@ public struct EnergyDayPrice: Codable {
     public let max: Int
     public let average: Double
     public let area: String
-    public let date: Date
+    public var date: Date
     public let prices: [EnergyPrice]
     
     public init(min: Int, max: Int, average: Double, area: String, date: Date, prices: [EnergyPrice]) {
