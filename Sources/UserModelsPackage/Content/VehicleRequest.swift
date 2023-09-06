@@ -19,11 +19,11 @@ public struct VehicleName: Codable {
 
 public struct VehicleRequest: Codable {
     public let email: String
-    public let vehicle: [VehicleName]
+    public let vehicles: [VehicleName]
     
-    public init(email: String, vehicle: [VehicleName]) {
+    public init(email: String, vehicles: [VehicleName]) {
         self.email = email
-        self.vehicle = vehicle
+        self.vehicles = vehicles
     }
 }
 public extension VehicleRequest {
