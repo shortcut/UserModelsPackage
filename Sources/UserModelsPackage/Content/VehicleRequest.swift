@@ -7,16 +7,16 @@
 
 import Foundation
 
-public struct Vehicle: Encodable {
+public struct VehicleName: Encodable {
     public let id: String
     public let name: String
 }
 
 public struct VehicleRequest: Encodable {
     public let email: String
-    public let vehicle: [Vehicle]
+    public let vehicle: [VehicleName]
     
-    public init(email: String, vehicle: [Vehicle]) {
+    public init(email: String, vehicle: [VehicleName]) {
         self.email = email
         self.vehicle = vehicle
     }
