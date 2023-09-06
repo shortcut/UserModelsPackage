@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct VehicleName: Encodable {
+public struct VehicleName: Codable {
     public let id: String
     public let name: String
     
@@ -17,7 +17,7 @@ public struct VehicleName: Encodable {
     }
 }
 
-public struct VehicleRequest: Encodable {
+public struct VehicleRequest: Codable {
     public let email: String
     public let vehicle: [VehicleName]
     
