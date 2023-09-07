@@ -8,19 +8,15 @@
 import Foundation
 
 public struct HomeScreenEV: Codable, Identifiable {
-    public let id = UUID()
+    public let id: String
     let title: String
     let text: String
     var tag = 0
     
-    public init(title: String, text: String, tag: Int = 0) {
+    public init(id: String, title: String, text: String, tag: Int = 0) {
+        self.id = id
         self.title = title
         self.text = text
         self.tag = tag
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case title
-        case text
     }
 }
