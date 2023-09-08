@@ -9,9 +9,9 @@ import Foundation
 
 public struct HomeScreenEV: Codable, Identifiable {
     public let id: String
-    let title: String
-    let text: String
-    var tag = 0
+    public let title: String
+    public let text: String
+    public var tag = 0
     
     public init(id: String, title: String, text: String, tag: Int = 0) {
         self.id = id
